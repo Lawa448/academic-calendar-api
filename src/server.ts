@@ -13,8 +13,9 @@ import scrapeYear from "./scrape.js";
 import { YearSchema } from "./types.js";
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
-const HOST = process.env.HOST ?? "localhost";
+// const HOST = process.env.HOST ?? "localhost";
 
+const HOST = "0.0.0.0";
 const app = Fastify({ logger: true });
 
 app.register(helmet);
