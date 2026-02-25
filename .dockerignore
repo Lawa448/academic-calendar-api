@@ -1,0 +1,7 @@
+#ignore .git files and .cache from editor
+.git 
+.cache
+
+#ignore all markdown giles
+*.md
+
