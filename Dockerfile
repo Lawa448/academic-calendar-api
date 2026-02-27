@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20-bookworm-slim
 
 WORKDIR /unsw-calendar-api
 
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
+
 EXPOSE 3000
 
-# USER root
 CMD ["npm", "start"]
